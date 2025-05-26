@@ -1,0 +1,20 @@
+/* style.css */
+#clickButton {
+    font-size: 24px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#pointsDisplay {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+#clickButton:active {
+    transform: scale(0.9);
+}
