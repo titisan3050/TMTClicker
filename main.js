@@ -35,6 +35,6 @@ function loadPoint() {
     if (point) {
         points = parseInt(point[1]);
         const pointsDisplay = document.getElementById('pointsDisplay');
-        pointsDisplay.textContent = `ポイント：${points}`; // ポイントの値を更新
+        pointsDisplay.textContent = `ポイント：${points}`; // ポイントの値を更新!
     }
 }
