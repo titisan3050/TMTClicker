@@ -37,4 +37,14 @@ function loadPoint() {
         const pointsDisplay = document.getElementById('pointsDisplay');
         pointsDisplay.textContent = `ポイント：${points}`; // ポイントの値を更新!!
     }
-}
+}// リセットボタンを追加
+const resetButton = document.createElement('button');
+resetButton.textContent = 'リセット';
+resetButton.onclick = function() {
+  // クッキーを削除
+  document.cookie = 'point=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+  // ポイントをリセット
+  points = 0;
+  pointsDisplay.textContent = `ポイント：${points}`;
+};
+document.body.appendChild(resetButton);
